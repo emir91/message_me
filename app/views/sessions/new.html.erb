@@ -8,7 +8,7 @@
 </h3>
 
 <div class="ui placeholder segment">
-  <div class="ui two column very relaxed stackable grid mt">
+  <div class="ui two column very relaxed stackable grid ">
     <div class="column">
       <%= form_for(:session, html: {class:"ui form", role: "form"}, url: login_path) do |f| %>
         <div class="field">
@@ -31,7 +31,7 @@
     <div class="middle aligned column">
       <div class="ui big orange button">
         <i class="signup icon"></i>
-        Sign Up
+       <%= link_to "Sign Up", signup_path, class:"link" %>
       </div>
     </div>
   </div>
