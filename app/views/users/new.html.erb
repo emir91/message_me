@@ -6,7 +6,7 @@
 </h3>
 
 
-<%= form_for(:user, html: {class:"ui form", role: 'form'}, url: 'signup_path') do |f|%>
+<%= form_for(@user, html: {class:"ui form", role: 'form'}, url: signup_path) do |f|%>
   <div class="ui stacked secondary segment">
   <div class="field">
     <%= f.label :email, "Email"%>
@@ -20,7 +20,7 @@
   </div>
   <div class="field">
     <%= f.label :password, "Password"%>
-    <%= f.text_field :password, placeholder:"Password" %>
+    <%= f.password_field :password, placeholder:"Password" %>
   </div>
   <%= f.button "Sign up", class:"ui large orange submit button" %>
   </div>
