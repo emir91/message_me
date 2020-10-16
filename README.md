@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a chat application done in Rails 5.
 
-Things you may want to cover:
+You can register and than send message to your friends who are also register.
 
-* Ruby version
+I use ActionCable to implement real-time features in Rails apps.
 
-* System dependencies
+Things that I have covered by doing this application are:
 
-* Configuration
+* Installation and usage different versions of Rails(in my previous app I have used Rails 6)
 
-* Database creation
+* Authentication system
 
-* Database initialization
+* Web socket
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Semantic UI
