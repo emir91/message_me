@@ -1,4 +1,4 @@
-# README
+# MESSAGE_ME
 
 This is a chat application done in Rails 5.
 
