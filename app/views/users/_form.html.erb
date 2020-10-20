@@ -6,7 +6,7 @@
       </h3>
     </div>
 
-    <%= form_for(@user, html: {class:"ui form", role: 'form'}, url: new_user_path) do |f|%>
+    <%= form_for(@user, html:{class:"ui form"}) do |f|%>
       <div class="ui stacked secondary segment">
         <div class="field">
           <%= f.label :email, "Email"%>

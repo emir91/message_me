@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
-  before_action :set_user, only:[:show, :edit, :update]
   before_action :require_user, only:[:edit, :show]
+  before_action :set_user, only:[:show, :edit, :update]
   before_action :require_same_user, only:[:show, :edit, :update]
   
   
@@ -37,19 +37,19 @@ class UsersController < ApplicationController
 
     private
 
-    def user_params
-     params.require(:user).permit(:email,:username,:password)
-    end
-
-    def set_user
-      @user = User.find(params[:id])
-    end
-
     def require_same_user
      if current_user != @user
       flash[:notice] = 'You can only view and edit your profile'
       redirect_to user_path(current_user)
      end 
+    end
+
+    def user_params
+      params.require(:user).permit(:email,:username,:password)
+     end
+
+    def set_user
+      @user = User.find(params[:id])
     end
 
 end
