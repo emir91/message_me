@@ -28,5 +28,9 @@
   </div>
 </div>
 <div class="pt">
-  <%= link_to "Go back", login_path %>
+<%=
+   link_to_if(!current_user, "Go back", { controller: "sessions", action: "new" }) do
+     link_to("Go back",@user, { controller: "users", action: "show", id: @user })
+   end
+%>
 </div>
