@@ -2,7 +2,7 @@
 
 This is a chat application done in Rails 5.
 
-You can register and than send message to your friends who are also register.
+You can register and than send message to your friends who are also registered.
 
 I use ActionCable to implement real-time features in Rails apps.
 
@@ -14,4 +14,4 @@ Things that I have covered by doing this application are:
 
 * Web socket
 
-* Semantic UI
+* Semantic UI (for styling)
